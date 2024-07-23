@@ -1,0 +1,168 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto;
+}
+
+.judul {
+    text-align: center;
+    color: #555;
+    font-size: 1.5rem;
+    margin: 20px 0;
+}
+
+.navbar {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.navbar h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.navbar img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.produk {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.produk h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.detail {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    justify-items: center;
+}
+
+.detail div {
+    display: flex;
+    justify-content: center;
+}
+
+.detail img {
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.harga {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.harga img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.payment {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.payment img {
+    max-width: 50px;
+    margin-bottom: 10px;
+}
+
+.payment h2 {
+    font-size: 1.2rem;
+    margin: 0;
+    color: #555;
+}
+
+.payment footer {
+    margin-top: 20px;
+}
+
+footer {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.whatsapp-link {
+    display: inline-block;
+    background-color: #25D366;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.whatsapp-link:hover {
+    background-color: #1ebd55;
+}
+
+@media (min-width: 600px) {
+    .logo {
+        max-width: 150px;
+    }
+
+    .judul {
+        font-size: 2rem;
+    }
+
+    .navbar h2,
+    .produk h2,
+    .payment h2 {
+        font-size: 1.5rem;
+    }
+
+    .detail {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .detail img {
+        width: 200px;
+    }
+}
