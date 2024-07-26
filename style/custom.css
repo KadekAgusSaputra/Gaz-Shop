@@ -10,6 +10,9 @@ body {
     background-color: #f0f0f0;
     color: #333;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 header {
@@ -127,6 +130,10 @@ footer {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: calc(100% - 40px);
+    left: 20px;
 }
 
 .whatsapp-link {
@@ -134,35 +141,4 @@ footer {
     background-color: #25D366;
     color: #fff;
     padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.whatsapp-link:hover {
-    background-color: #1ebd55;
-}
-
-@media (min-width: 600px) {
-    .logo {
-        max-width: 150px;
-    }
-
-    .judul {
-        font-size: 2rem;
-    }
-
-    .navbar h2,
-    .produk h2,
-    .payment h2 {
-        font-size: 1.5rem;
-    }
-
-    .detail {
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    }
-
-    .detail img {
-        width: 200px;
-    }
-}
+    border-radius:
